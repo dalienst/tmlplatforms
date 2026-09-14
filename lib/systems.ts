@@ -189,29 +189,5 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
       statColor: "text-[#334155]",
       pillBg: "bg-slate-100 text-slate-800 border-slate-200"
     }
-  },
-  {
-    id: "sherehe-ticketing",
-    name: "Tamarind Events Ticketing Engine",
-    tagline: "Online event ticketing and mobile payment verification for hospitality events.",
-    category: "Digital Distribution",
-    department: "Events & Entertainment Division",
-    badge: "Ticketing",
-    iconName: "Ticket",
-    keyFeatures: [
-      "Mobile checkout with automated Safaricom M-Pesa STK push verification",
-      "Branded digital ticket generation with unique QR verification codes",
-      "Camera-based gate scanner interface for rapid guest entry (deployed for The L-Boogie Event)",
-      "Live sales dashboard tracking tier inventory and capacity"
-    ],
-    techStack: ["Next.js", "Safaricom Daraja M-Pesa", "PostgreSQL", "html5-qrcode", "TailwindCSS"],
-    operationalScope: "Tamarind Events & Carnivore Entertainment",
-    colorTheme: {
-      accentBorder: "hover:border-rose-600",
-      badgeStyle: "bg-rose-50 text-[#be123c] border-rose-300 font-bold",
-      iconBg: "bg-[#be123c] text-white",
-      statColor: "text-[#be123c]",
-      pillBg: "bg-rose-50 text-rose-900 border-rose-200"
-    }
   }
 ];
