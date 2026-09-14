@@ -48,7 +48,7 @@ export interface TamarindSystem {
   id: string;
   name: string;
   tagline: string;
-  category: "Financial Governance" | "Guest Experience & AI" | "Marine Operations" | "Workforce & Knowledge" | "Digital Distribution";
+  category: "Financial Governance" | "Guest Experience & AI" | "Dhow Sailing" | "Workforce & Knowledge" | "Digital Distribution";
   department: string;
   badge: string;
   iconName: string;
@@ -68,32 +68,6 @@ export interface TamarindSystem {
 }
 
 export const TAMARIND_SYSTEMS: TamarindSystem[] = [
-  {
-    id: "finance-portal",
-    name: "Finance & Credit Note Portal",
-    tagline: "Digital approval workflow and posting verification system for credit note adjustments.",
-    category: "Financial Governance",
-    department: "Group Finance & Internal Audit",
-    badge: "Finance",
-    iconName: "ShieldCheck",
-    coreValue: "Shareholder Satisfaction / Financial Results",
-    coreValueAlignment: "Protects shareholder profitability by enforcing strict audit governance and preventing duplicate accounting adjustments.",
-    keyFeatures: [
-      "4-tier digital approval pipeline: Initiator → Internal Audit → Financial Controller → General Manager",
-      "Automated verification checking for duplicate or triplicate invoice entries",
-      "One-click branded PDF credit note generation for accounting records",
-      "Timestamped audit logs tracking all approvals, rejections, and review comments"
-    ],
-    techStack: ["Next.js App Router", "Django REST Framework", "PostgreSQL", "Prisma ORM", "Resend", "TailwindCSS"],
-    operationalScope: "Tamarind Nairobi, Tamarind Mombasa, Tamarind Dhow, Carnivore, Tamarind Village",
-    colorTheme: {
-      accentBorder: "hover:border-amber-500",
-      badgeStyle: "bg-amber-50 text-amber-800 border-amber-300",
-      iconBg: "bg-[#b8860b] text-white",
-      statColor: "text-[#b8860b]",
-      pillBg: "bg-amber-50 text-amber-900 border-amber-200"
-    }
-  },
   {
     id: "ai-analyst",
     name: "AI Guest Sentiment & Operations Analyst",
@@ -121,12 +95,65 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     }
   },
   {
+    id: "finance-portal",
+    name: "Finance & Credit Note Portal",
+    tagline: "Digital approval workflow and posting verification system for credit note adjustments.",
+    category: "Financial Governance",
+    department: "Group Finance & Internal Audit",
+    badge: "Finance",
+    iconName: "ShieldCheck",
+    coreValue: "Shareholder Satisfaction / Financial Results",
+    coreValueAlignment: "Protects shareholder profitability by enforcing strict audit governance and preventing duplicate accounting adjustments.",
+    keyFeatures: [
+      "4-tier digital approval pipeline: Initiator → Internal Audit → Financial Controller → General Manager",
+      "Automated verification checking for duplicate or triplicate invoice entries",
+      "One-click branded PDF credit note generation for accounting records",
+      "Timestamped audit logs tracking all approvals, rejections, and review comments"
+    ],
+    techStack: ["Next.js App Router", "Django REST Framework", "PostgreSQL", "Prisma ORM", "Resend", "TailwindCSS"],
+    operationalScope: "Tamarind Nairobi, Tamarind Mombasa, Tamarind Dhow, Carnivore, Tamarind Village",
+    colorTheme: {
+      accentBorder: "hover:border-amber-500",
+      badgeStyle: "bg-amber-50 text-amber-800 border-amber-300",
+      iconBg: "bg-[#b8860b] text-white",
+      statColor: "text-[#b8860b]",
+      pillBg: "bg-amber-50 text-amber-900 border-amber-200"
+    }
+  },
+  {
+    id: "village-booking",
+    name: "Tamarind Village Direct Booking Portal",
+    tagline: "Website and direct booking integration with the ProfitRoom reservation engine.",
+    category: "Digital Distribution",
+    department: "Tamarind Village & Reservations",
+    badge: "Reservations",
+    iconName: "Building2",
+    coreValue: "Shareholder Satisfaction / Financial Results",
+    coreValueAlignment: "Strengthens financial returns and shareholder value by capturing direct reservations and avoiding third-party OTA commission deductions.",
+    keyFeatures: [
+      "Direct integration with the ProfitRoom booking engine for live apartment rates and suite availability",
+      "Responsive accommodation showcase highlighting oceanfront suites, amenities, and pool facilities",
+      "Automated lead categorization routing dining, conference, and room inquiries to department inboxes",
+      "Mobile-optimized direct reservation flow"
+    ],
+    techStack: ["React 19 / Next.js", "ProfitRoom API", "PostgreSQL", "TailwindCSS"],
+    operationalScope: "Tamarind Village Oceanfront Luxury Apartments, Mombasa",
+    unitLogo: "/village.png",
+    colorTheme: {
+      accentBorder: "hover:border-orange-600",
+      badgeStyle: "bg-orange-50 text-[#c2410c] border-orange-300 font-bold",
+      iconBg: "bg-[#ea580c] text-white",
+      statColor: "text-[#c2410c]",
+      pillBg: "bg-orange-50 text-orange-900 border-orange-200"
+    }
+  },
+  {
     id: "dhow-cruise",
     name: "Tamarind Dhow Cruise Operations Core",
     tagline: "Jetty check-in, passenger manifest management, and daily food & beverage reporting.",
-    category: "Marine Operations",
-    department: "Tamarind Dhow Marine Division",
-    badge: "Marine",
+    category: "Dhow Sailing",
+    department: "Tamarind Dhow Restaurant",
+    badge: "Dhow Sailing",
     iconName: "Compass",
     coreValue: "Customer Satisfaction",
     coreValueAlignment: "Enhances guest arrival experience through rapid QR boarding check-in and provides galley crew with live passenger counts and dietary flags.",
@@ -137,7 +164,7 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
       "Daily per-sailing passenger counts and food & beverage cost tracking"
     ],
     techStack: ["Next.js", "html5-qrcode", "TypeScript", "PostgreSQL", "TailwindCSS"],
-    operationalScope: "Tamarind Dhow Mombasa Harbour Cruises (Lunch & Dinner)",
+    operationalScope: "Tamarind Dhow Cruises (Lunch & Dinner)",
     unitLogo: "/dhow.jpg",
     colorTheme: {
       accentBorder: "hover:border-blue-600",
@@ -197,33 +224,6 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
       iconBg: "bg-[#d97706] text-white",
       statColor: "text-[#d97706]",
       pillBg: "bg-amber-50 text-amber-900 border-amber-200"
-    }
-  },
-  {
-    id: "village-booking",
-    name: "Tamarind Village Direct Booking Portal",
-    tagline: "Website and direct booking integration with the ProfitRoom reservation engine.",
-    category: "Digital Distribution",
-    department: "Tamarind Village & Reservations",
-    badge: "Reservations",
-    iconName: "Building2",
-    coreValue: "Shareholder Satisfaction / Financial Results",
-    coreValueAlignment: "Strengthens financial returns and shareholder value by capturing direct reservations and avoiding third-party OTA commission deductions.",
-    keyFeatures: [
-      "Direct integration with the ProfitRoom booking engine for live apartment rates and suite availability",
-      "Responsive accommodation showcase highlighting oceanfront suites, amenities, and pool facilities",
-      "Automated lead categorization routing dining, conference, and room inquiries to department inboxes",
-      "Mobile-optimized direct reservation flow"
-    ],
-    techStack: ["React 19 / Next.js", "ProfitRoom API", "PostgreSQL", "TailwindCSS"],
-    operationalScope: "Tamarind Village Oceanfront Luxury Apartments, Mombasa",
-    unitLogo: "/village.png",
-    colorTheme: {
-      accentBorder: "hover:border-orange-600",
-      badgeStyle: "bg-orange-50 text-[#c2410c] border-orange-300 font-bold",
-      iconBg: "bg-[#ea580c] text-white",
-      statColor: "text-[#c2410c]",
-      pillBg: "bg-orange-50 text-orange-900 border-orange-200"
     }
   },
   {

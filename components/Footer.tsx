@@ -48,7 +48,7 @@ export default function Footer() {
               <li>Carnivore Restaurant, Nairobi</li>
               <li>Tamarind Restaurant, Nairobi</li>
               <li>Tamarind Restaurant, Mombasa</li>
-              <li>Tamarind Dhow Harbour Cruises</li>
+              <li>Tamarind Dhow Restaurant</li>
               <li>Tamarind Village Oceanfront Suites</li>
               <li>Roast by Carnivore</li>
             </ul>
@@ -62,7 +62,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-slate-400 font-medium">
               <li>Finance &amp; Credit Note Portal</li>
               <li>AI Guest Sentiment &amp; Operations Analyst</li>
-              <li>Dhow Marine Operations Core</li>
+              <li>Tamarind Dhow Cruise Operations Core</li>
               <li>Elimu LMS &amp; SOP Hub</li>
               <li>Kaizen Staff Innovation Portal</li>
               <li>Village Direct Booking Engine</li>

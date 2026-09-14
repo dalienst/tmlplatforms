@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Tamarind Group Enterprise Platforms | Digital Infrastructure Hub",
-  description: "Official institutional ecosystem powering financial governance, AI guest sentiment, marine operations, and workforce excellence across Tamarind Group properties.",
+  description: "Official institutional ecosystem powering financial governance, AI guest sentiment, Dhow sailing operations, and workforce excellence across Tamarind Group properties.",
   keywords: [
     "Tamarind Group",
     "Tamarind Management Limited",

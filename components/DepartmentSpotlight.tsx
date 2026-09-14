@@ -15,10 +15,10 @@ export default function DepartmentSpotlight() {
       impact: "Operational Insights"
     },
     {
-      name: "Marine Operations (Tamarind Dhow)",
-      headline: "Harbour Boarding & Daily F&B Cost Management",
+      name: "Tamarind Dhow Restaurant",
+      headline: "Dhow Boarding & Daily F&B Cost Management",
       description: "Jetty smartphone camera QR check-in and passenger manifests synchronized directly with galley provisioning and dining registers.",
-      impact: "Harbour Operations"
+      impact: "Dhow Sailing"
     },
     {
       name: "Human Resources & Staff Welfare",

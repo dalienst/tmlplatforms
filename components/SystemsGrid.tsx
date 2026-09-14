@@ -29,7 +29,7 @@ export default function SystemsGrid() {
     "All",
     "Financial Governance",
     "Guest Experience & AI",
-    "Marine Operations",
+    "Dhow Sailing",
     "Workforce & Knowledge",
     "Digital Distribution"
   ];
