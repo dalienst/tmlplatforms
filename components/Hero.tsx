@@ -100,7 +100,7 @@ export default function Hero() {
               className="px-6 py-3 rounded-xl bg-[#d97706] hover:bg-amber-600 text-white font-semibold text-xs transition-all shadow-md flex items-center space-x-2"
             >
               <Layers className="w-4 h-4" />
-              <span>Explore Operational Platforms (8)</span>
+              <span>Explore Operational Platforms (7)</span>
             </a>
           </div>
         </div>

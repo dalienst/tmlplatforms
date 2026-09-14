@@ -51,7 +51,7 @@ export default function Navbar() {
               href="#systems"
               className="text-slate-300 hover:text-[#d97706] transition-colors"
             >
-              Platforms (8)
+              Platforms (7)
             </a>
             <a
               href="#governance"
@@ -67,7 +67,7 @@ export default function Navbar() {
               <span className="relative flex h-2 w-2">
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <span className="font-medium text-[11px]">8 Systems Operational</span>
+              <span className="font-medium text-[11px]">7 Systems Operational</span>
             </div>
           </div>
 
@@ -98,7 +98,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="block px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-[#d97706]"
             >
-              Platforms (8)
+              Platforms (7)
             </a>
             <a
               href="#governance"
