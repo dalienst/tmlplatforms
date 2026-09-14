@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import SystemsGrid from "@/components/SystemsGrid";
+import CoreValuesSection from "@/components/CoreValuesSection";
 import DepartmentSpotlight from "@/components/DepartmentSpotlight";
 import Footer from "@/components/Footer";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="flex-grow">
         <Hero />
         <SystemsGrid />
+        <CoreValuesSection />
         <DepartmentSpotlight />
       </main>
       <Footer />

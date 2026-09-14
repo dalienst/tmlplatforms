@@ -156,9 +156,19 @@ export default function SystemsGrid() {
                     </div>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                     {system.tagline}
                   </p>
+
+                  {/* Core Value Alignment */}
+                  <div className="mb-5 p-3 rounded-xl bg-slate-50 border border-slate-200/80">
+                    <span className="text-[10px] uppercase font-bold text-[#d97706] tracking-wider block mb-0.5">
+                      Core Value: {system.coreValue}
+                    </span>
+                    <p className="text-xs text-slate-600 leading-snug">
+                      {system.coreValueAlignment}
+                    </p>
+                  </div>
 
                   {/* Key Operational Features */}
                   <div className="space-y-2 mb-5">

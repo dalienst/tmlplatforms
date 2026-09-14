@@ -1,3 +1,49 @@
+export interface TamarindCoreValue {
+  id: string;
+  name: string;
+  statement: string;
+  iconName: string;
+  badgeColor: string;
+}
+
+export const TAMARIND_CORE_VALUES: TamarindCoreValue[] = [
+  {
+    id: "customer-satisfaction",
+    name: "Customer Satisfaction",
+    statement: "To make every single customer feel welcome, valued and totally satisfied.",
+    iconName: "HeartHandshake",
+    badgeColor: "bg-amber-50 text-[#b8860b] border-amber-200"
+  },
+  {
+    id: "hr-development",
+    name: "HR Development / Learning & Growth",
+    statement: "To develop staff who are enthusiastic, vibrant, responsible, flexible and courteous while ensuring that they feel empowered, respected and cared for in harmonious work environment.",
+    iconName: "Users",
+    badgeColor: "bg-emerald-50 text-[#004d40] border-emerald-200"
+  },
+  {
+    id: "innovation-process",
+    name: "Innovation / Business Process",
+    statement: "To challenge all staff to constantly strive to initiate fresh, enticing and innovative products, services and processes.",
+    iconName: "Lightbulb",
+    badgeColor: "bg-blue-50 text-[#0b3b82] border-blue-200"
+  },
+  {
+    id: "shareholder-financial",
+    name: "Shareholder Satisfaction / Financial Results",
+    statement: "To achieve long-term growth through profitability in relation to shareholder investment.",
+    iconName: "TrendingUp",
+    badgeColor: "bg-purple-50 text-purple-800 border-purple-200"
+  },
+  {
+    id: "community-relations",
+    name: "Community Relations",
+    statement: "To treat the wider community and stakeholders with utmost respect, integrity and be actively involved in our community and environmental concerns.",
+    iconName: "ShieldCheck",
+    badgeColor: "bg-teal-50 text-teal-800 border-teal-200"
+  }
+];
+
 export interface TamarindSystem {
   id: string;
   name: string;
@@ -6,6 +52,8 @@ export interface TamarindSystem {
   department: string;
   badge: string;
   iconName: string;
+  coreValue: string;
+  coreValueAlignment: string;
   keyFeatures: string[];
   techStack: string[];
   operationalScope: string;
@@ -28,6 +76,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Group Finance & Internal Audit",
     badge: "Finance",
     iconName: "ShieldCheck",
+    coreValue: "Shareholder Satisfaction / Financial Results",
+    coreValueAlignment: "Protects shareholder profitability by enforcing strict audit governance and preventing duplicate accounting adjustments.",
     keyFeatures: [
       "4-tier digital approval pipeline: Initiator → Internal Audit → Financial Controller → General Manager",
       "Automated verification checking for duplicate or triplicate invoice entries",
@@ -52,6 +102,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Group General Management & Operations",
     badge: "Operations AI",
     iconName: "BrainCircuit",
+    coreValue: "Customer Satisfaction",
+    coreValueAlignment: "Ensures every single customer feels valued and totally satisfied by accelerating management action on guest feedback within 24 hours.",
     keyFeatures: [
       "Centralized guest feedback database linking physical review cards and online reviews",
       "Conversational search assistant allowing managers to query comments by department and shift",
@@ -76,6 +128,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Tamarind Dhow Marine Division",
     badge: "Marine",
     iconName: "Compass",
+    coreValue: "Customer Satisfaction",
+    coreValueAlignment: "Enhances guest arrival experience through rapid QR boarding check-in and provides galley crew with live passenger counts and dietary flags.",
     keyFeatures: [
       "In-browser smartphone camera QR code scanner for guest boarding at the jetty",
       "Real-time manifest synchronization between dock staff and galley crew",
@@ -101,6 +155,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Group Human Resources & Training",
     badge: "Training",
     iconName: "GraduationCap",
+    coreValue: "HR Development / Learning & Growth",
+    coreValueAlignment: "Develops frontline staff through accessible role-based standard operating procedures and an intelligent procedural Q&A assistant.",
     keyFeatures: [
       "Centralized digital library for brand Standard Operating Procedures (SOPs)",
       "Department-level Role-Based Access Control ensuring staff access relevant role procedures",
@@ -125,6 +181,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Staff Welfare & General Management",
     badge: "Continuous Improvement",
     iconName: "Lightbulb",
+    coreValue: "Innovation / Business Process",
+    coreValueAlignment: "Challenges all staff to initiate fresh operational improvements through a zero-password mobile submission flow validated against the HR roster.",
     keyFeatures: [
       "Zero-password submission form validated in real time against internal HR roster via Staff ID & Email",
       "Direct mobile photo upload for before-and-after improvement suggestions",
@@ -149,6 +207,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Tamarind Village & Reservations",
     badge: "Reservations",
     iconName: "Building2",
+    coreValue: "Shareholder Satisfaction / Financial Results",
+    coreValueAlignment: "Strengthens financial returns and shareholder value by capturing direct reservations and avoiding third-party OTA commission deductions.",
     keyFeatures: [
       "Direct integration with the ProfitRoom booking engine for live apartment rates and suite availability",
       "Responsive accommodation showcase highlighting oceanfront suites, amenities, and pool facilities",
@@ -174,6 +234,8 @@ export const TAMARIND_SYSTEMS: TamarindSystem[] = [
     department: "Group Information Technology",
     badge: "IT Infrastructure",
     iconName: "Cpu",
+    coreValue: "Innovation / Business Process",
+    coreValueAlignment: "Modernizes internal support processes with clear SLA targets, tracking hardware reliability to ensure seamless dining room operations.",
     keyFeatures: [
       "Centralized ticket intake by property, department, and priority level",
       "Service Level Agreement (SLA) countdown targets for point-of-sale and network issues",

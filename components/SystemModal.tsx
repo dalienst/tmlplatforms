@@ -81,6 +81,16 @@ export default function SystemModal({ system, onClose }: SystemModalProps) {
           </div>
         </div>
 
+        {/* Core Value Alignment */}
+        <div className="mb-6 p-4 rounded-xl bg-amber-50/70 border border-amber-200 flex items-start space-x-3">
+          <Sparkles className="w-5 h-5 text-[#d97706] shrink-0 mt-0.5" />
+          <div>
+            <span className="text-xs uppercase font-bold text-amber-900 tracking-wider">Tamarind Core Value Alignment</span>
+            <p className="text-sm font-bold text-slate-900 mt-0.5">{system.coreValue}</p>
+            <p className="text-xs text-slate-700 mt-1 leading-relaxed">{system.coreValueAlignment}</p>
+          </div>
+        </div>
+
         {/* Key Features */}
         <div className="mb-6">
           <h3 className="text-sm font-bold uppercase tracking-wider text-slate-700 mb-3 flex items-center space-x-2">
