@@ -84,10 +84,7 @@ export default function Hero() {
                   Departmental Attribution &amp; Governance
                 </p>
                 <p className="text-xs sm:text-sm text-slate-300 mt-1 leading-normal">
-                  Initiative of the <strong className="text-white font-semibold">Tamarind Group IT Department</strong> in collaboration with Group Finance, General Management, Tamarind Dhow Restaurant, HR, and Operations.
-                </p>
-                <p className="text-xs text-slate-400 mt-1 font-mono">
-                  Architected &amp; Deployed by Dalienst Owino Oduor · IT Assistant &amp; Digital Solutions Architect
+                  Initiative of the <strong className="text-white font-semibold">Tamarind Group IT Department</strong> in collaboration with Finance, General Manager, Tamarind Dhow Restaurant, HR, and Operations.
                 </p>
               </div>
             </div>
