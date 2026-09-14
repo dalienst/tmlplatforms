@@ -1,6 +1,5 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import MetricsBanner from "@/components/MetricsBanner";
 import SystemsGrid from "@/components/SystemsGrid";
 import DepartmentSpotlight from "@/components/DepartmentSpotlight";
 import Footer from "@/components/Footer";
@@ -11,7 +10,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <MetricsBanner />
         <SystemsGrid />
         <DepartmentSpotlight />
       </main>

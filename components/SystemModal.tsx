@@ -72,33 +72,13 @@ export default function SystemModal({ system, onClose }: SystemModalProps) {
           </div>
         </div>
 
-        {/* Quantifiable Impact Spotlight */}
-        <div className="mb-6 p-5 rounded-xl bg-gradient-to-r from-[#003830] to-[#004d40] text-white">
-          <div className="flex items-center space-x-4">
-            <div className="text-3xl sm:text-4xl font-extrabold text-amber-300">
-              {system.businessImpactMetric.stat}
-            </div>
-            <div>
-              <p className="text-xs uppercase font-bold tracking-wider text-emerald-200">Primary Business Milestone</p>
-              <p className="text-sm sm:text-base font-semibold text-white">{system.businessImpactMetric.label}</p>
-            </div>
+        {/* Operational Scope */}
+        <div className="mb-6 p-4 rounded-xl bg-slate-50 border border-slate-200/80 flex items-start space-x-3">
+          <ShieldCheck className="w-5 h-5 text-slate-700 shrink-0 mt-0.5" />
+          <div>
+            <span className="text-xs uppercase font-bold text-slate-500 tracking-wider">Operational Scope & Deployment</span>
+            <p className="text-sm font-semibold text-slate-900 mt-0.5">{system.operationalScope}</p>
           </div>
-        </div>
-
-        {/* Detailed Business Benefits */}
-        <div className="mb-6">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-[#004d40] mb-3 flex items-center space-x-2">
-            <ShieldCheck className="w-4 h-4" />
-            <span>Operational & Business Benefits</span>
-          </h3>
-          <ul className="space-y-2.5">
-            {system.businessBenefits.map((benefit, idx) => (
-              <li key={idx} className="flex items-start space-x-2.5 text-sm text-slate-700">
-                <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
-                <span>{benefit}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Key Features */}

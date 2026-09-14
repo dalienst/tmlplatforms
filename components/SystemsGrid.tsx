@@ -160,30 +160,15 @@ export default function SystemsGrid() {
                     {system.tagline}
                   </p>
 
-                  {/* Business Impact Box */}
-                  <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between mb-5">
-                    <div>
-                      <span className="text-[10px] uppercase tracking-wider font-bold text-slate-400 block">
-                        Verified Business ROI
-                      </span>
-                      <span className="text-xs font-semibold text-slate-800">
-                        {system.businessImpactMetric.label}
-                      </span>
-                    </div>
-                    <span className={`text-2xl font-black ${system.colorTheme.statColor} tracking-tight`}>
-                      {system.businessImpactMetric.stat}
-                    </span>
-                  </div>
-
-                  {/* Core Benefits */}
+                  {/* Key Operational Features */}
                   <div className="space-y-2 mb-5">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
-                      Core Business Benefits
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Core Functional Capabilities
                     </span>
-                    {system.businessBenefits.slice(0, 2).map((benefit, bIdx) => (
-                      <div key={bIdx} className="flex items-start space-x-2 text-xs text-slate-700">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
-                        <span>{benefit}</span>
+                    {system.keyFeatures.slice(0, 2).map((feature, fIdx) => (
+                      <div key={fIdx} className="flex items-start space-x-2 text-xs text-slate-700">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-slate-400 shrink-0 mt-0.5" />
+                        <span className="leading-snug">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -216,7 +201,7 @@ export default function SystemsGrid() {
 
                   <button
                     onClick={() => setActiveModalSystem(system)}
-                    className="inline-flex items-center space-x-1 text-xs font-bold text-[#004d40] hover:text-[#d97706] transition-colors"
+                    className="inline-flex items-center space-x-1 text-xs font-bold text-slate-800 hover:text-[#d97706] transition-colors"
                   >
                     <span>View Architecture</span>
                     <ArrowRight className="w-3.5 h-3.5" />
